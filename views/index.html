@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>China Travel</title>
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta content="text/html; charset=utf-8">
+<meta name="author" content="shirley">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- shirley-css -->
+<link href="css/shirley.css" rel="stylesheet" type="text/css" media="all">
+<!--// style-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>	
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- Bootstrap core CSS -->
+	<link href="css/Traveltypestyle.css" rel="stylesheet">
+    <script src="js/Traveltypestyle.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            document.forms[1].txtBillAmt.value = calculateBill('menuTable');
+            document.querySelector("#calcBill").addEventListener("click", function() {
+                document.forms[1].txtBillAmt.value = calculateBill('menuTable');
+            });
+            document.querySelector("#showVeg").addEventListener("click", function() {
+                highlightVegetarian('menuTable', this.checked);
+            });
+        });
+    </script>
+    <!-- //Bootstrap core CSS -->
+
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-info">
+					<div class="top-header-left wow fadeInLeft animated" data-wow-delay=".5s">
+						<p>More than 10 new destinations for your trip</p>
+					</div>
+					<div class="top-header-right wow fadeInRight animated" data-wow-delay=".5s">
+						<div class="top-header-right-info">
+							<ul>
+								<li><a href="login.html">Login</a></li>
+								<li><a href="signup.html">Sign up</a></li>
+							</ul>
+						</div>
+						<div class="social-icons">
+							<ul>
+								<li><a class="twitter" href="https://twitter.com/?lang=zh"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="twitter facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="twitter google" href="https://plus.google.com/about?hl=zh"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header">
+			<div class="container">
+				<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
+					<h1><a href="index.html"><img src="images/2LOGO.jpg" alt="logo"></a></h1>
+				</div>
+				<div class="top-nav wow fadeInRight animated" data-wow-delay=".5s">
+					<nav class="navbar navbar-default">
+						<div class="container">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="plan.html">plan</a></li>
+								<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a class="hvr-bounce-to-bottom" href="gallery1.html">Gallery1</a></li>
+										<li><a class="hvr-bounce-to-bottom" href="gallery2.html">Gallery2</a></li>          
+									</ul>
+								</li>	
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>	
+							<div class="clearfix"> </div>
+						</div>	
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner">
+			<div class="slider">
+				<h2 class="wow shake animated" data-wow-delay=".5s">Trip</h2>
+				<div class="border"></div>
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+						// here also use "$(window).load(function() {"
+						$(function () {
+						// Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+									$('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+									$('.events').append("<li>after event fired.</li>");
+								}
+							 });				
+						});
+				</script>
+				<div  id="top" class="callbacks_container-wrap">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="slider-info">
+								<h3 class="wow fadeInRight animated" data-wow-delay=".5s">Let the heart travel</h3>
+								<p class="wow fadeInLeft animated" data-wow-delay=".5s">Unique traditional culture, colorful ethnic customs.</p>
+								<div class="more-button wow fadeInRight animated" data-wow-delay=".5s">
+									<a href="single.html">Click Here	</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="slider-info">
+								<h3>Feel with your heart</h3>
+								<p>The beautiful style scene has always attracted the attention of the world</p>
+								<div class="more-button">
+									<a href="single.html">Read More	</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="slider-info">
+								<h3>Relax your vacation	</h3>
+								<p> Let the scenery of the four seasons accompany you	</p>
+								<div class="more-button">
+									<a href="single.html">Click Here	</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+	
+	<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="banner-bottom-grids">
+				<div class="col-md-6 banner-bottom-left wow fadeInLeft animated" data-wow-delay=".5s">
+					<div class="left-border">
+						<div class="left-border-info">
+							<p>Only the seaside can spend a cool summer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 banner-bottom-left banner-bottom-right wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="left-border">
+						<div class="left-border-info right-border-info">
+							<p>Listen carefully to the summer seawater</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner-bottom -->
+	<!-- information -->
+	<div class="information">
+		<div class="container">
+			<div class="information-heading">
+				<h3 class="wow fadeInDown animated" data-wow-delay=".5s">Why Book With Us</h3>
+				<p class="wow fadeInUp animated" data-wow-delay=".5s">Here you can enjoy all the benefits of Chinese tourism. Enjoy food, shopping, and enjoying the summer seaside and lying on the beach blowing the sea breeze. And there is also the oldest culture in the Chinese capital. Tourist attractions can bring you extraordinary visual experience.</p>
+			</div>
+            <div>
+            <h3 class="wow fadeInDown animated" data-wow-delay=".5s">This is a video about the show of China 《beautiful China》</h3></div>
+            
+            
+            <iframe controls="controls"  autostart="true" autoplay="autoplay" loop="loop" width="1028" height="768"  src="https://www.youtube.com/embed/DZrQ7YuLvtE" &autoPlay=true frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loop="loop"></iframe>
+			
+            <div class="information-grids">
+				<div class="col-md-4 information-grid wow fadeInLeft animated" data-wow-delay=".5s">
+					<div class="information-info">
+						<div class="information-grid-img">
+							<img src="images/02.jpg" alt="Temple of Heaven">
+						</div>
+						<div class="information-grid-info">
+							<h4>Temple of Heaven </h4>
+							<p>The Temple of Heaven was the place where the emperor worshiped the emperor and prayed for the harvest of grain during the Ming and Qing dynasties. The Temple of Heaven is the general name for the two altars of Luqiu and Qiqiu. The altar has two walls, forming an altar inside and outside. The walls of the altar are in the north and south, symbolizing heaven and earth.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 information-grid wow fadeInUp animated" data-wow-delay=".5s">
+					<div class="information-info">
+						<div class="information-grid-info">
+							<h4>Hangzhou West Lake</h4>
+							<p>West Lake, located in the west of Hangzhou City, Zhejiang Province, is one of the first national key scenic spots and one of China's ten scenic spots. It is one of the major ornamental freshwater lakes in mainland China, and it is also one of the few in the World Heritage List and the only lake cultural heritage in China.</p>
+						</div>
+						<div class="information-grid-img">
+							<img src="images/05.jpg" alt="West Lake">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 information-grid wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="information-info">
+						<div class="information-grid-img">
+							<img src="images/03.jpg" alt="Great Wall">
+						</div>
+						<div class="information-grid-info">
+							<h4>The Great Wall</h4>
+							<p>The Great Wall, also known as the Great Wall of China, is an ancient Chinese military defensive project. It is a tall, sturdy, continuous and long-lasting moat that restricts the enemy from riding. The Great Wall is not a merely isolated wall, but a defense system that combines urban walls, barriers, kiosks and landmarks with the city walls as the main body.The Great Wall is a tourist attraction.
+                            </p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //information -->
+	
+	<!-- popular -->
+	<div class="popular">
+		<div class="container">
+			<div class="popular-heading information-heading">
+				<h3 class="wow fadeInDown animated" data-wow-delay=".5s">Popular Places</h3>
+				<p class="wow fadeInUp animated" data-wow-delay=".5s">China's coastal cities refer to cities on the Chinese coastline. The city on the coastline of China, because of its proximity to the sea, is generally beautiful and has a pleasant climate. Including Sanya, Qingdao, Rizhao, Weihai, Xiamen, Yantai and many other cities.</p>
+			</div>
+			<div class="popular-slide">
+				<script>
+						// here use "$(window).load(function() {"
+						$(function () {
+						// Slideshow 4
+							$("#slider1").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: false,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+									$('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+									$('.events').append("<li>after event fired.</li>");
+								}
+							 });				
+						});
+				</script>
+				<div  id="top" class="callbacks_container-wrap">
+					<ul class="rslides" id="slider1">
+						<li>
+							<div class="popular-slide-info wow bounceIn animated" data-wow-delay=".5s">
+								<h4>Sanya</h4>
+								<p>Sanya City is located at the southernmost tip of Hainan Island, where the planned urban area is 37 square kilometers. It is 91.6 kilometers long from east to west and 51 kilometers wide from north to south. The entire area is surrounded by mountains in the north and the sea in the south. The terrain is gradually inclined from north to south, forming a narrow and long polygonal shape. The coastline of the country is 209.1 kilometers long and there are 19 large and small harbors.</p>
+							</div>
+						</li>
+						<li>
+							<div class="popular-slide-info popular-slide1">
+								<h4>Haikou</h4>
+								<p>The scenery is beautiful, there are many places of interest and historical sites. In addition, many tourist areas and attractions have been newly developed in recent years. The content of the tour is very rich. More famous are Wanlv Park, Holiday Beach, Tropical Ocean World, Binhai Park, etc. Each area has its own special features. It is a multi-functional, integrated national tropical environment integrating sightseeing, vacation, recreation, fitness, business exhibition, and culture and entertainment. Coastal tourism and leisure resort!</p>
+							</div>
+						</li>
+						<li>
+							<div class="popular-slide-info popular-slide2">
+								<h4>Hailing Island</h4>
+								<p>Yangling Hailing Island is located on Hailing Island in Yangjiang and enjoys the reputation of “Southern Beidaihe” and “Oriental Hawaii”. It is known as an uncarved emerald.Hailing Island is part of the Hailing Island Economic Development Experimental Area in Jiangcheng District of Yangjiang City. It is the fourth largest island in Guangdong and is located on the southwest coast of Yangjiang City.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="popular-grids">
+				<div class="col-md-4 popular-grid wow fadeInLeft animated" data-wow-delay=".5s">
+					<h5>Qingdao</h5>
+					<p> The first group of excellent tourist cities in China known as “Oriental Switzerland” is also the main port for overseas tourists entering and leaving China. </p>
+				</div>
+				<div class="col-md-4 popular-grid wow fadeInUp animated" data-wow-delay=".5s">
+					<h5>RIZHAO</h5>
+					<p>With the title of “Oriental Sun City” and “Hawaii cannot reach”,  The blue sky, the blue sea and the golden beach are the signboards of Rizhao Tourism.</p>
+				</div>
+				<div class="col-md-4 popular-grid wow fadeInRight animated" data-wow-delay=".5s">
+					<h5>Lianyungang</h5>
+					<p>an international port city, the birthplace of “Journey to the West” culture, the East Bridgehead of the Silk Road Economic Belt, and one of China’s top ten seaports.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //popular -->
+    
+	
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-nav wow fadeInLeft animated" data-wow-delay=".5s">
+					<h4>Navigation</h4>
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery1.html">Gallery</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5 footer-nav wow fadeInUp animated" data-wow-delay=".5s">
+					<h4>Newsletter</h4>
+					<p>Fill in your email address here, you can contact us</p>
+					<form>
+						<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter your email here" required="">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+				<div class="col-md-4 footer-nav wow fadeInRight animated" data-wow-delay=".5s">
+					<h4>Latest News</h4>
+					<div class="news-grids">
+						<div class="news-grid">
+							<h6>09/01/2018 : <a href="about.html">Cultural news</a></h6>
+							<h6>13/07/2017 : <a href="plan.html">Entertainment News</a></h6>
+							<h6>13/02/2018 : <a href="single.html">Beijing News</a></h6>
+							<h6>28/11/2017 : <a href="gallery1.html">Travel news</a></h6>
+							<h6>19/01/2018 : <a href="index.html">Life News</a></h6>
+							<h6>23/02/2018 : <a href="gallery2.html">Food News</a></h6>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="copyright wow fadeInUp animated" data-wow-delay=".5s">
+				<p>Copyright &copy; 2019.This is creat by QIAN XU  <a href="http://index.html/" target="_blank" title="China Travel">shirley</a> - Collect from <a href="http://index.html/" title="China Travel" target="_blank">shirley</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+    <!-- Bootstrap core JavaScript -->
+	<script src="jquery/jquery.min.js"></script>
+	<script src="jquery/table.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>	
+</html>

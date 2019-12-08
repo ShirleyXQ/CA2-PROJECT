@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Travelmenu>
+  <section name="north">
+    <city>
+      <item>Inner Mongolia</item>
+      <price>500</price>
+    </city>
+    <city>
+      <item>northeast</item>
+      <price>200</price>
+    </city>
+    <city maincity="true">
+      <item>Tianjin</item>
+      <price>150</price>
+    </city>
+  </section>
+  <section name="south">
+    <city>
+      <item>Guizhou</item>
+      <price>500</price>
+    </city>
+    <city maincity="true">
+      <item>Nanjing</item>
+      <price>450</price>
+    </city>
+    <city>
+      <item>Hangzhou</item>
+      <price>600</price>
+    </city>
+    <city>
+      <item>Jiangsu</item>
+      <price>550</price>
+    </city>
+    <city>
+      <item>Xiamen</item>
+      <price>350</price>
+    </city>
+  </section>
+  <section name="Most classic city">
+    <city maincity="true">
+      <item>Beijing</item>
+      <price>200</price>
+    </city>
+    <city maincity="true">
+      <item>Shanghai</item>
+      <price>200</price>
+    </city>
+    <city maincity="true">
+      <item>Guangdong</item>
+      <price>300</price>
+    </city>
+  </section>
+  <section name="other">
+    <city>
+      <item>Hong Kong</item>
+      <price>1000</price>
+    </city>
+    <city>
+      <item>Macao</item>
+      <price>1000</price>
+    </city>
+    <city>
+      <item>Taiwan</item>
+      <price>1000</price>
+    </city>
+  </section>
+</Travelmenu>
